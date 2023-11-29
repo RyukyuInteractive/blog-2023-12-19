@@ -7,7 +7,7 @@ const HomePage = async () => {
   const allPosts = await getAllPosts()
 
   return (
-    <div className="px-8">
+    <main className="max-w-screen-xl mx-auto px-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {allPosts.map((post) => (
           <PostCard
@@ -19,7 +19,7 @@ const HomePage = async () => {
           />
         ))}
       </div>
-    </div>
+    </main>
   )
 }
 

@@ -25,7 +25,7 @@ const RootLayout = (props: Props) => {
     <html lang={"ja"} suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen font-sans antialiased max-w-screen-xl mx-auto",
+          "min-h-screen font-sans antialiased w-full",
           notoSansJp.variable,
         )}
       >
