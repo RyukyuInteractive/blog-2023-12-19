@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "biomejs.biome",
+    "editorconfig.editorconfig",
+    "eliostruyf.vscode-typescript-exportallmodules",
+    "mikestead.dotenv",
+    "smulyono.reveal"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "cSpell.words": ["clsx", "shadcn"],
+  "cSpell.ignorePaths": [".vscode"],
+  "editor.formatOnSave": true,
+  "eslint.enable": false,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "files.exclude": {
+    "**/node_modules": true,
+    "*.tsbuildinfo": true,
+    ".idea": true,
+    ".next": true,
+    "next-env.d.ts": true,
+    "out": true,
+    "package-lock.json": true
+  },
+  "prettier.enable": true,
+  "search.exclude": {
+    "**/node_modules": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "@radix-ui",
+    "next/dist",
+    "next/router",
+    "react-day-picker",
+    "tailwind-merge"
+  ],
+  "githubPullRequests.ignoredPullRequestBranches": ["main"],
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": true,
+      "source.organizeImports.biome": true
+    },
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": true,
+      "source.organizeImports.biome": true
+    },
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
