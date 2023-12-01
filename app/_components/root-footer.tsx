@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
-export const Footer = () => {
+export const RootFooter = () => {
   return (
     <footer className="max-w-screen-xl mx-auto p-8">
       <div className="space-y-4">

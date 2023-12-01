@@ -17,20 +17,16 @@ type Props = {
 
 export const PostCard = (props: Props) => {
   return (
-    <article>
-      <Card className="h-full">
-        <CardHeader className="pb-2">
-          <Link as={`/posts/${props.slug}`} href="/posts/[slug]">
-            <CardTitle>{props.title}</CardTitle>
-          </Link>
-          <CardDescription>
-            <DateTime text={props.date} />
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="space-y-2">
-          <p className="leading-relaxed">{props.excerpt}</p>
-        </CardContent>
-      </Card>
-    </article>
+    <Card className="h-full">
+      <CardHeader className="pb-2">
+        <CardTitle>{props.title}</CardTitle>
+        <CardDescription>
+          <DateTime text={props.date} />
+        </CardDescription>
+      </CardHeader>
+      <CardContent>
+        <p className="leading-relaxed">{props.excerpt}</p>
+      </CardContent>
+    </Card>
   )
 }

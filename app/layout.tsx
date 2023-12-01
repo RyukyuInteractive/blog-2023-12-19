@@ -1,7 +1,7 @@
 import "./globals.css"
 
-import { Footer } from "@/app/_components/footer"
-import { Header } from "@/app/_components/header"
+import { RootFooter } from "@/app/_components/root-footer"
+import { RootHeader } from "@/app/_components/root-header"
 import { RootProvider } from "@/app/_components/root-provider"
 import { Config } from "@/config"
 import { cn } from "@/lib/utils"
@@ -30,9 +30,9 @@ const RootLayout = (props: Props) => {
         )}
       >
         <RootProvider>
-          <Header />
+          <RootHeader />
           {props.children}
-          <Footer />
+          <RootFooter />
         </RootProvider>
       </body>
     </html>
