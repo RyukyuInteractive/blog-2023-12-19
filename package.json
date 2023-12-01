@@ -5,14 +5,9 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc",
-    "refactor": "biome check . --apply-unsafe && biome lint . --apply-unsafe && biome format . --write",
-    "biome:format": "biome format . --write",
-    "biome:check": "biome check . --apply-unsafe",
-    "biome:lint": "biome lint . --apply-unsafe",
-    "check": "tsc --noEmit"
+    "refactor": "biome check . --apply-unsafe && biome lint . --apply-unsafe && biome format . --write"
   },
   "dependencies": {
-    "@hookform/resolvers": "^3.3.2",
     "@radix-ui/react-avatar": "^1.0.4",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "class-variance-authority": "^0.7.0",
@@ -29,7 +24,6 @@
     "react-markdown": "^9.0.1",
     "tailwind-merge": "^2.0.0",
     "tailwindcss-animate": "^1.0.7",
-    "typescript": "^5.3.2",
     "zod": "^3.22.4"
   },
   "devDependencies": {
@@ -39,6 +33,7 @@
     "@types/react-dom": "^18.2.17",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.5"
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.3.2"
   }
 }
