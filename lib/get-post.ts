@@ -1,4 +1,5 @@
 import { join } from "path"
+import { Config } from "@/config"
 import { MarkdownPost } from "@/lib/types/markdown-post"
 import { readFile } from "fs/promises"
 import matter from "gray-matter"
@@ -18,7 +19,10 @@ export const getPost = async (slug: string): Promise<MarkdownPost> => {
     excerpt: data.excerpt,
     date: data.date,
     authorName: data.author.name,
-    authorAvatarURL: data.author.picture,
+    authorAvatarURL:
+      process.env.NODE_ENV === "production"
+        ? `${Config.baseURL}/${data.author.picture}`
+        : data.author.picture,
     coverImageURL: data.coverImage,
     ogImageURL: data.ogImage.url,
     body: content,
