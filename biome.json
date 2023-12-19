@@ -21,6 +21,6 @@
     }
   },
   "files": {
-    "ignore": [".next", "public", "package-lock.json"]
+    "ignore": [".next", "public", "package-lock.json", "out"]
   }
 }

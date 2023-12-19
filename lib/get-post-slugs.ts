@@ -2,7 +2,7 @@ import { join } from "path"
 import { readdir } from "fs/promises"
 
 export const getPostSlugs = async () => {
-  const postsDirectory = join(process.cwd(), "_posts")
+  const postsDirectory = join(process.cwd(), "posts")
 
   const filePaths = await readdir(postsDirectory, "utf-8")
 

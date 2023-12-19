@@ -3,7 +3,7 @@ import { MarkdownPost } from "@/lib/types/markdown-post"
 import { readFile } from "fs/promises"
 import matter from "gray-matter"
 
-const postsDirectory = join(process.cwd(), "_posts")
+const postsDirectory = join(process.cwd(), "posts")
 
 export const getPost = async (slug: string): Promise<MarkdownPost> => {
   const fullPath = join(postsDirectory, `${slug}.md`)

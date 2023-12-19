@@ -1,3 +1,4 @@
+import "zenn-content-css"
 import "./globals.css"
 
 import { RootFooter } from "@/app/_components/root-footer"

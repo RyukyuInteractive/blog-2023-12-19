@@ -1,7 +1,7 @@
 import { getPost } from "@/lib/get-post"
 import { getPostSlugs } from "@/lib/get-post-slugs"
 
-export const getAllPosts = async () => {
+export const getPosts = async () => {
   const slugs = await getPostSlugs()
 
   const promises = slugs.map((slug) => {

@@ -28,22 +28,14 @@
     "react-day-picker",
     "tailwind-merge"
   ],
-  "githubPullRequests.ignoredPullRequestBranches": ["main"],
-  "[typescript]": {
-    "editor.codeActionsOnSave": {
-      "quickfix.biome": true,
-      "source.organizeImports.biome": true
-    },
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[typescriptreact]": {
-    "editor.codeActionsOnSave": {
-      "quickfix.biome": true,
-      "source.organizeImports.biome": true
-    },
-    "editor.defaultFormatter": "biomejs.biome"
-  },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": "explicit",
+      "source.organizeImports.biome": "explicit"
+    },
+    "editor.defaultFormatter": "biomejs.biome"
   }
 }
