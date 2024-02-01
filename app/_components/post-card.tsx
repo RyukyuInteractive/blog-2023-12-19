@@ -5,7 +5,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import Link from "next/link"
 import { DateTime } from "./date-time"
 
 type Props = {
@@ -15,7 +14,7 @@ type Props = {
   slug: string
 }
 
-export const PostCard = (props: Props) => {
+export function PostCard(props: Props) {
   return (
     <Card className="h-full">
       <CardHeader className="pb-2">

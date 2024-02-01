@@ -6,7 +6,7 @@ type Props = {
   children: React.ReactNode
 }
 
-export const RootProvider = (props: Props) => {
+export function RootProvider(props: Props) {
   return (
     <ThemeProvider attribute={"class"} defaultTheme={"system"} enableSystem>
       {props.children}

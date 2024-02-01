@@ -21,7 +21,7 @@ type Props = {
   children: React.ReactNode
 }
 
-const RootLayout = (props: Props) => {
+export default function RootLayout(props: Props) {
   return (
     <html lang={"ja"} suppressHydrationWarning>
       <body
@@ -47,5 +47,3 @@ export const metadata: Metadata = {
   robots: { index: false },
   openGraph: { images: [Config.homeOgImageURL] },
 }
-
-export default RootLayout

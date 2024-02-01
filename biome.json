@@ -1,7 +1,7 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.4.0/schema.json",
-  "organizeImports": {
-    "enabled": true
+  "$schema": "node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "ignore": [".next", "public", "package-lock.json", "out"]
   },
   "linter": {
     "enabled": true,
@@ -12,6 +12,9 @@
       }
     }
   },
+  "organizeImports": {
+    "enabled": true
+  },
   "formatter": {
     "indentStyle": "space"
   },
@@ -19,8 +22,5 @@
     "formatter": {
       "semicolons": "asNeeded"
     }
-  },
-  "files": {
-    "ignore": [".next", "public", "package-lock.json", "out"]
   }
 }

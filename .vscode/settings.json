@@ -1,8 +1,6 @@
 {
   "cSpell.words": ["clsx", "shadcn"],
-  "cSpell.ignorePaths": [".vscode"],
-  "editor.formatOnSave": true,
-  "eslint.enable": false,
+  "cSpell.ignorePaths": [".vscode", "public", "posts"],
   "files.associations": {
     "*.css": "tailwindcss"
   },
@@ -28,9 +26,11 @@
     "tailwind-merge"
   ],
   "[css]": {
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript][typescriptreact]": {
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "quickfix.biome": "explicit",
       "source.organizeImports.biome": "explicit"

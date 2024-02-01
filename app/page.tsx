@@ -4,7 +4,7 @@ import { getPosts } from "@/lib/get-posts"
 import { Metadata } from "next"
 import Link from "next/link"
 
-const HomePage = async () => {
+export default async function HomePage() {
   const allPosts = await getPosts()
 
   return (
@@ -30,5 +30,3 @@ const HomePage = async () => {
 export const metadata: Metadata = {
   title: Config.blogTitle,
 }
-
-export default HomePage

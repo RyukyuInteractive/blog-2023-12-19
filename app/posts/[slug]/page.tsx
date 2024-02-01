@@ -4,7 +4,6 @@ import { Config } from "@/config"
 import { getPost } from "@/lib/get-post"
 import { getPosts } from "@/lib/get-posts"
 import { Metadata } from "next"
-import Markdown from "react-markdown"
 import markdownToHtml from "zenn-markdown-html"
 
 type Props = {
@@ -13,7 +12,7 @@ type Props = {
   }
 }
 
-const PostPage = async (props: Props) => {
+export default async function PostPage(props: Props) {
   const post = await getPost(props.params.slug)
 
   const html = markdownToHtml(post.body)
@@ -36,14 +35,14 @@ const PostPage = async (props: Props) => {
   )
 }
 
-export const generateMetadata = async (props: Props): Promise<Metadata> => {
+export async function generateMetadata(props: Props): Promise<Metadata> {
   const post = await getPost(props.params.slug)
   return {
     title: `${post.title} - ${Config.blogTitle}`,
   }
 }
 
-export const generateStaticParams = async () => {
+export async function generateStaticParams() {
   const posts = await getPosts()
   return posts.map((post) => {
     return {
@@ -51,5 +50,3 @@ export const generateStaticParams = async () => {
     }
   })
 }
-
-export default PostPage

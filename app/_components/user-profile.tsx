@@ -5,7 +5,7 @@ type Props = {
   picture: string
 }
 
-export const UserProfile = (props: Props) => {
+export function UserProfile(props: Props) {
   return (
     <div className="flex items-center gap-x-2">
       <Avatar className="w-8 h-8">
